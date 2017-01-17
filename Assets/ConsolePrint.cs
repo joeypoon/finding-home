@@ -28,6 +28,13 @@ public class ConsolePrint : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            print("Left arrow pressed");
+        }
+        else if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            print("Right arrow pressed");
+        }
+    }
 }
